@@ -1,0 +1,61 @@
+body{
+    background-image: url(background.png);
+    color:rgb(232, 179, 72);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+h2, h1{
+    color:antiquewhite;
+    font-size: 40px;
+    text-decoration: underline;
+}
+section{
+display: grid;
+place-items: center;
+align-content: center;
+min-height: 100vh;
+}
+p{
+    font-size: 20px;
+    color:bisque;
+    font-style: oblique;
+}
+.hijabs{
+    display: flex;
+}
+.hijab:nth-child(2){
+    transition-delay: 200ms;
+}
+.hijab:nth-child(3){
+    transition-delay: 400ms;
+}
+.hijab:nth-child(4){
+    transition-delay: 600ms;
+}
+.hidden{
+    opacity: 0;
+    transition: all 3s;
+    filter: blur(5px);
+    transform: translateX(-100%)
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.hijab{
+    background-color: blueviolet;
+    border-radius: 20%;
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
+.heading{
+    font-size: 80px;
+    color:brown;
+    text-justify: center;
+    text-align: center;
+    text-decoration: wavy;
+    font-style: italic;
+    letter-spacing: -5px;
+}
